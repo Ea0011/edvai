@@ -11,7 +11,7 @@ PIXART-α is a diffusion based text-to-image (t2i) model. Diffusion based t2i mo
 
 1. Class-conditioned pre-training initialized from a pre-trained Diffusion Transformer (DiT) model in order to capture pixel dependencies before even conditioning on text. Suitable initialization from a pre-trained model effectively accelerates the training of the model.
 
-2. Conditioned training on (text, image) pairs. This is where conditioning and correspondences between images and text is learned. Text and image dataset is produced from LAION dataset by applying a pre-trained LLaVa model to refine text inputs.
+2. Conditioned training on (text, image) pairs. This is where conditioning and correspondences between images and text is learned. Text and image dataset is produced from LAION and SAM datasets by applying a pre-trained LLaVa model to refine text inputs.
 
 3. Aeshtetic training is the last stage where the model is taught to produce stylistically pleasing and high res images.
 
