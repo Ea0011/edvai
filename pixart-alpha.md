@@ -22,7 +22,9 @@ PIXART-α uses a DiT architecture which is transformer based (unlike many other 
 
 ## Dataset
 
-The dataset is constructed from the large scela LAION data. Existing LAION data text captions are not detailed. They are short and deficient. Hence, the scene and composition of the images is not well described which can lead to models failing to capture fine-grained t2i correspondences. Hence, the authors use LLaVA model to generate new text descriptions for each image. LLaVA is a multi modal language-image model able to perform several crucial tasks given image and a text as a prompt. The authors just prompt it to describe the image.
+The dataset is constructed from the large scale LAION and SAM datasets. Existing LAION data text captions are not detailed. They are short and deficient. Hence, the scene and composition of the images is not well described which can lead to models failing to capture fine-grained t2i correspondences. Hence, the authors use LLaVA model to generate new text descriptions for each image. LLaVA is a multi modal language-image model able to perform several crucial tasks given image and a text as a prompt. The authors just prompt it to describe the image. Additionally, the authors label the SAM dataset with the same approach.
+
+After initial training, JourneyDB and an interal dataset are used to fine-tune for higher aesthetic quality of the generated images.
 
 ## Results in Brief
 
@@ -51,3 +53,6 @@ Briefly, the paper achieves the following results:
 3. [DiT](https://github.com/facebookresearch/DiT)
 4. [RAPHAEL](https://arxiv.org/abs/2305.18295)
 5. [Stable Diffusion](https://arxiv.org/abs/2112.10752)
+6. [Prompt2Prompt](https://prompt-to-prompt.github.io/)
+7. [LDM](https://arxiv.org/pdf/2112.10752.pdf)
+8. [Generative Models](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/)
